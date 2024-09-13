@@ -1,0 +1,7 @@
+def popular_words (text: str, words: list)-> dict:
+    text_low = text.lower().strip()
+    res = {}
+    for word in words:
+        res[word] = text_low.count(word)
+    return res
+print(popular_words('''When I was One I had just begun When I was Two I was nearly new ''', ['i', 'was', 'three', 'near']))
